@@ -37,7 +37,11 @@ const Header = styled.header`
 		}
 
 		@media (max-width: 768px) {
-			display: block;
+			display: grid;
+			grid-template-rows: repeat(2, 1fr);
+			justify-content: center;
+			grid-gap: 1rem;
+
 			> div:first-child {
 				margin-bottom: 1rem;
 			}
