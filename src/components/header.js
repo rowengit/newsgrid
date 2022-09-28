@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Logo from "../img/logo.png";
-import { useState } from "react";
 import { defColor, btnPrimary } from "./common";
 import { Link } from "react-router-dom";
 
@@ -49,8 +48,8 @@ const Header = styled.header`
 	}
 `;
 
-export const HeaderElem = () => {
-	const [page, setPage] = useState("home");
+export const HeaderElem = (props = {}) => {
+	const { page } = props;
 	return (
 		<Header>
 			<div className="content">
@@ -59,15 +58,11 @@ export const HeaderElem = () => {
 				</Link>
 				<div>
 					<ul>
-						<li
-							className={page === "home" ? "active" : ""}
-							onClick={() => setPage("home")}>
-							Home
+						<li className={page === "home" ? "active" : ""}>
+							<Link to="/">Home</Link>
 						</li>
-						<li
-							className={page === "about" ? "active" : ""}
-							onClick={() => setPage("about")}>
-							About
+						<li className={page === "about" ? "active" : ""}>
+							<Link to="/about">About</Link>
 						</li>
 					</ul>
 				</div>

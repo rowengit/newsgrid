@@ -10,8 +10,8 @@ import { createGlobalStyle } from "styled-components";
 import { defColor } from "./components/common";
 
 const GlobalStyle = createGlobalStyle`
-  label {
-    max-height:1rem;
+  	label {
+    	max-height:1rem;
 		padding: 0.5rem;
 		font-size: 0.5rem;
 		border-radius: 2rem;
@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
 		}
 	}
 
-  h1 {
+  	h1 {
 		font-family: "Staatliches", cursive;
 		font-weight: 600;
 		font-size: 2rem;
@@ -65,6 +65,7 @@ const router = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
 	<React.StrictMode>
 		<GlobalStyle />

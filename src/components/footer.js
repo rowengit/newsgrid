@@ -68,7 +68,9 @@ const Footer = styled.footer`
 					${btnSecondary}
 					margin-top:.5rem;
 					line-height: 2rem;
-					width: 50%;
+					width: 100%;
+					white-space: nowrap;
+					max-width: 160px;
 				}
 			}
 		}

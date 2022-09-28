@@ -121,10 +121,6 @@ const EditorPick = styled.section`
 					font-size: 1.25rem;
 					line-height: 2rem;
 				}
-
-				p {
-					line-height: 1.5rem;
-				}
 			}
 		}
 
@@ -160,7 +156,7 @@ const EditorPick = styled.section`
 function App() {
 	return (
 		<>
-			<HeaderElem />
+			<HeaderElem page="home" />
 			<Main>
 				<BannerElem />
 				<EditorPickElem />
